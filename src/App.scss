@@ -1,0 +1,69 @@
+.wrapper {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+.comment {
+  height: 100vh;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__avatar {
+    position: relative;
+    height: 32px;
+    width: 32px;
+    box-shadow: var(--elevation-200-canvas, 0px 1px 2px rgba(0, 0, 0, .1), 0px 5px 8px rgba(0, 0, 0, .3) );
+    border-radius: 16px 16px 16px 0;
+    background-color: var(--color-bg-brand,#2c2c2c);
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      width: 23px;
+      top: 3px;
+      left: 3px;
+    }
+   
+    &:hover {
+      width: 232px;
+      height: 62px;
+      transition: width 0.1s ease-in-out;
+      display: flex;
+      align-items: center;
+      padding: 0px 0 0px 34px;
+   
+      .wrapper {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.username {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  transition: ease-in 2s;
+}
+
+.time {
+  color: #919191;
+  font-size: 11px;
+  font-weight: 500;
+  transition: ease-in 2s;
+}
+
+.message {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+
+  margin: 8px 0 15px 0;
+}
